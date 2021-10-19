@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Custom properties, update these for your own design*/
+
+:root {
+  /*--ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;*/
+  --ff-primary: "Lora", serif;
+  --ff-secondary: "Roboto Slab", serif;
+
+  --fw-reg: 400;
+  --fw-bold: 700;
+
+  --clr-light: #fff;
+  --clr-dark: #303030;
+  --clr-accent: #16e0bd;
+  /*--clr-accent: #f8333c;*/
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+}
+
+h1,
+h2 {
+  font-family: var(--ff-secondary);
+}
+a,
+p {
+  font-family: var(--ff-primary);
+}
+
+p {
+  font-size: 16px;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+}
+
+h4 {
+  display: inline-block;
+  color: var(--clr-accent);
+  cursor: pointer;
+
+  text-transform: uppercase;
+
+  font-weight: var(--fw-bold);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 2.5em;
+  background: var(--clr-accent);
+  color: var(--clr-dark);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  transition: transform 200ms ease-in-out;
+}
+.myservices {
+  background-image: url(../img/services-bg.jpg);
+}
+
+.portfolio_img {
+  transition: transform 7500s cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
+}
+
+.portfolio_img:hover,
+.portfolio_item:focus.portfolio_img {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+.portfolio_item {
+  background-color: #16e0bd;
+}
+.w3-hover:hover {
+  color: #16e0bd;
+}
+
+.w3-hover {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.contact {
+  text-decoration: underline;
+  cursor: pointer;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.services_title::after {
+  content: "";
+  display: block;
+  width: 3em; /*25%*/
+  height: 1.5px;
+  margin: 0.2em auto 1em;
+  background: whitesmoke; /*or 'currentColor' to retain similar color as that of underlined text*/
+}
+
+/*.icon-bar {
+  width: 30px;
+  border: 1px solid white;
+  background-color: aliceblue;
+}
+*/
